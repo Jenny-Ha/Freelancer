@@ -26,27 +26,30 @@
 </head>
 
 <body>
-    <!-- Inserta tu código aqui -->
+ 
     <header>
-        <nav class="navbar bg-primary">
+        <nav class="navbar navbar-default navbar-fixed-top" >
             <div class="container">
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span> 
-                    </button>
-                    <a class="navbar-brand" href="#"><strong>Freelancer</strong></a>
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="#"><b>Freelancer</b></a>
                 </div>
-                <div class="collapse navbar-collapse">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#">Portafolio</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
+
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                  <ul class="nav navbar-nav navbar-right">
+                    <li ><a href="#Portafolio" class="active">Portafolio</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                  </ul>
+
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
         </nav>
         <section class="hero bg-success p-tb-40">
             <div class="container text-center"> 
@@ -61,12 +64,12 @@
         </section>
     </header>
 
-    <section class="portafolio p-tb-40">
+    <section id="Portafolio" class="p-tb-40">
         <h3>Portafolio</h3>
         <div class="star-line text-center">
-                    <hr class="line">
-                    <span class="fa fa-star"></span>
-                    <hr class="line">
+            <hr class="line">
+            <span class="fa fa-star"></span>
+            <hr class="line">
         </div>
         <div class="container">
             <div class="row">
@@ -81,7 +84,9 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-4"><img src="img/portfolio/game.png" alt="Game"></div>
+                <div class="col-sm-4">
+                    <img src="img/portfolio/game.png" alt="Game">
+                </div>
                 <div class="col-sm-4"><img src="img/portfolio/safe.png" alt="Safe"></div>
                 <div class="col-sm-4"><img src="img/portfolio/submarine.png" alt="Submarine"></div>
             </div>
@@ -110,7 +115,7 @@
         </div> <!--fin Container-->
     </section>
 
-    <section class="contact p-tb-40">
+    <section id="Contact" class="p-tb-40">
         <div class="container">
             <h3>Contact Me</h3>
             <div class="star-line text-center">
